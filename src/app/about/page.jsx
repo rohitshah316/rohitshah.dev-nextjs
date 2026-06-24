@@ -138,19 +138,19 @@ const About = () => {
 
       <div className={`px-10 py-6 rounded-2xl transform hover:-translate-y-2 ring ring-cyan-600 bg-linear-to-r from-cyan-50 to-blue-50`}>
   
-  <p className="text-lg leading-relaxed flex items-center gap-2 mb-4">
+  <p className="text-lg leading-relaxed  md:flex items-center gap-2 mb-4">
     <GiCoffeeCup className="text-red-950" /> Fan of both Tea and Coffee. But <span className="font-semibold text-gradient">Tea over Coffee, always.</span> 
   </p>
   <hr className="border-gray-300 mb-4" />
-  <p className="text-lg leading-relaxed flex items-center gap-2 mb-4">
+  <p className="text-lg leading-relaxed md:flex items-center gap-2 mb-4">
     <FaMoon className="text-indigo-400" /> I do my best coding <span className="font-semibold text-gradient">after midnight.</span>
   </p>
   <hr className="border-gray-300 mb-4" />
-  <p className="text-lg leading-relaxed flex items-center gap-2 mb-4">
+  <p className="text-lg leading-relaxed md:flex items-center gap-2 mb-4">
     <FaMusic className="text-pink-400" /> I debug better with <span className="font-semibold text-gradient">lo-fi music</span> playing in the background.
   </p>
     <hr className="border-gray-300 mb-4" />
-  <p className="text-lg leading-relaxed flex items-center gap-2">
+  <p className="text-lg leading-relaxed md:flex items-center gap-2">
     <FaGoogleScholar className="text-cyan-600" /> My classmate name is<span className="font-semibold text-gradient">Alex</span> and <span className="font-semibold text-gradient">Alex</span> is <span className='text-gradient font-semibold'>smart!</span>
   </p>
 
