@@ -151,7 +151,7 @@ const About = () => {
   </p>
     <hr className="border-gray-300 mb-4" />
   <p className="text-lg leading-relaxed md:flex items-center gap-2">
-    <FaGoogleScholar className="text-cyan-600" /> My classmate name is<span className="font-semibold text-gradient">Alex</span> and <span className="font-semibold text-gradient">Alex</span> is <span className='text-gradient font-semibold'>smart!</span>
+    <FaGoogleScholar className="text-cyan-600" /> My classmate name is<span className="font-semibold text-gradient"> Alex</span> and <span className="font-semibold text-gradient">Alex</span> is <span className='text-gradient font-semibold'>smart!</span>
   </p>
 
 </div>
