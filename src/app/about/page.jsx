@@ -1,31 +1,31 @@
-import React, { useContext } from 'react'
 import { FaGoogleScholar } from "react-icons/fa6";
 import { IoMdPerson } from "react-icons/io";
-
+import { FaLightbulb } from "react-icons/fa";
+import { FaYoutube, FaMoon, FaMusic } from "react-icons/fa6";
+import { GiCoffeeBeans, GiCoffeeCup } from "react-icons/gi";
 
 const About = () => {
 
-
   return (
 
-    <section className={`m-10  "text-black max-w-4xl mx-auto px-6 pt-12 pb-20`}>
+    <section className={`m-10text-black max-w-4xl mx-auto px-6 pt-12 pb-20`}>
       <h2 className="text-3xl font-bold mb-6">About Me</h2>
 
       <p className="mb-4 text-lg leading-relaxed">
-        Hi, I’m Rohit Shah, a <span className='text-gradient font-semibold'>Frontend Developer</span> specializing in building fast,
+        Hi, I'm Rohit Shah, a <span className='text-gradient font-semibold'>Frontend Engineer</span> specializing in building fast,
         responsive, and production-ready web applications.
       </p>
 
       <p className="mb-4 text-lg leading-relaxed">
-        I focus on <span className="font-semibold text-gradient">React and modern JavaScript</span> to develop
+        I focus on <span className="font-semibold text-gradient">React, Next.js, and modern JavaScript</span> to develop
         scalable, maintainable applications with clean architecture and strong
-        user experience. I’ve built multiple real-world projects that involve
+        user experience. I've built multiple real-world projects that involve
         dynamic data handling, API integration, and responsive UI design, all
         deployed and optimized for performance.
       </p>
 
       <p className="mb-4 text-lg leading-relaxed">
-        I’m comfortable working with component-based architecture, managing
+        I'm comfortable working with component-based architecture, managing
         state efficiently, and writing clean, readable code that can scale in
         real-world environments. Beyond just development, I pay close attention
         to <span className="font-semibold text-gradient">UI/UX, performance, and overall product quality</span>.
@@ -36,7 +36,7 @@ const About = () => {
       <div className="mb-6">
         <h3 className="text-xl font-semibold my-2">What I Can Do:</h3>
         <ul className="list-disc list-inside space-y-1">
-          <li>Build modern web applications using React</li>
+          <li>Build modern web applications using React and Next.js</li>
           <li>Create responsive and user-friendly UI with clean design</li>
           <li>Integrate APIs and handle real-time data</li>
           <li>Write maintainable, scalable, and performance-focused code</li>
@@ -55,8 +55,8 @@ const About = () => {
       </div>
 
       <p className="text-lg leading-relaxed">
-        I’m currently open to <span className="font-semibold text-gradient">remote opportunities and freelance projects</span>,
-        and I’m ready to contribute to real-world products from day one.
+        I'm currently open to <span className="font-semibold text-gradient">remote opportunities and freelance projects</span>,
+        and I'm ready to contribute to real-world products from day one.
       </p>
 
 
@@ -92,7 +92,7 @@ const About = () => {
        <hr className='border-gray-700'/>
         <div className='flex justify-between my-2 md:flex-row flex-col'>
           <span>Role</span>
-          <h3 className='italic'>Frontend Developer (React)</h3>
+          <h3 className='italic'>Frontend Developer (React & Next.js)</h3>
         </div>
         <hr className='border-gray-700'/>
         <div className='flex justify-between my-2 md:flex-row flex-col'>
@@ -102,7 +102,7 @@ const About = () => {
        <hr className='border-gray-700'/>
         <div className='flex justify-between my-2 md:flex-row flex-col'>
           <span>Primary Stack</span>
-          <h3 className='italic'>React, JS, Tailwind CSS</h3>
+          <h3 className='italic'>React, Next.js, JS, Tailwind CSS</h3>
         </div>
        <hr className='border-gray-700'/>
 
@@ -130,6 +130,31 @@ const About = () => {
         </div>
       
       </div>
+
+      {/* Fun Fact Section */}
+      <h2 className="text-3xl font-bold mb-6 mt-10 flex gap-2 items-center">
+        Fun Fact <FaLightbulb className='text-yellow-400' />
+      </h2>
+
+      <div className={`px-10 py-6 rounded-2xl transform hover:-translate-y-2 ring ring-cyan-600 bg-linear-to-r from-cyan-50 to-blue-50`}>
+  
+  <p className="text-lg leading-relaxed flex items-center gap-2 mb-4">
+    <GiCoffeeCup className="text-red-950" /> Fan of both Tea and Coffee. But <span className="font-semibold text-gradient">Tea over Coffee, always.</span> 
+  </p>
+  <hr className="border-gray-300 mb-4" />
+  <p className="text-lg leading-relaxed flex items-center gap-2 mb-4">
+    <FaMoon className="text-indigo-400" /> I do my best coding <span className="font-semibold text-gradient">after midnight.</span>
+  </p>
+  <hr className="border-gray-300 mb-4" />
+  <p className="text-lg leading-relaxed flex items-center gap-2 mb-4">
+    <FaMusic className="text-pink-400" /> I debug better with <span className="font-semibold text-gradient">lo-fi music</span> playing in the background.
+  </p>
+    <hr className="border-gray-300 mb-4" />
+  <p className="text-lg leading-relaxed flex items-center gap-2">
+    <FaGoogleScholar className="text-cyan-600" /> My classmate name is<span className="font-semibold text-gradient">Alex</span> and <span className="font-semibold text-gradient">Alex</span> is <span className='text-gradient font-semibold'>smart!</span>
+  </p>
+
+</div>
 
     </section>
   )

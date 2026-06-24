@@ -1,71 +1,7 @@
-export const skills = [
-  {
-    id: 1,
-    title: "Frontend",
-    skills: [
-      "React.js",
-      "JavaScript (ES6+)",
-      "HTML5",
-      "CSS3",
-      "Tailwind CSS",
-      "Firebase",
-      "Firebase Auth",
-      "Firestore",
-      "Chart.js",
-    ],
-  },
-  {
-    id: 2,
-    title: "Tools & Technologies",
-    skills: [
-      "Git",
-      "GitHub",
-      "VS Code",
-      "Chrome DevTools",
-      "REST APIs",
-      "Netlify",
-      "Vite",
-    ],
-  },
-  {
-    id: 3,
-    title: "Core Concepts",
-    skills: [
-      "Responsive Design",
-      "API Integration",
-      "State Management",
-      "Component-Based Architecture",
-      "Real-time Database",
-      "Authentication",
-    ],
-  },
-  {
-    id: 4,
-    title: "Currently Exploring",
-    skills: [
-      "TypeScript",
-      "Next.js",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "Full Stack",
-    ],
-  },
-  {
-    id: 5,
-    title: "Professional Skills",
-    skills: [
-      "Problem Solving",
-      "Communication",
-      "Time Management",
-      "Adaptability",
-    ],
-  },
-];
-
 export const projects = [
   {
     id: 1,
+    slug: "real-time-chat-app",
     title: "Real-time Chat App",
     description:
       "A modern and responsive Real-time Chat Application built with React and Firebase that allows users to register, login, and chat with others instantly in real time. Features Firebase Authentication, live Firestore messaging, notification sounds, and protected routing.",
@@ -86,6 +22,7 @@ export const projects = [
   },
   {
     id: 2,
+    slug: "react-dashboard-app",
     title: "React Dashboard App",
     description:
       "A modern analytics dashboard with interactive Chart.js visualizations including Line, Bar, and Pie charts. Features dark and light mode with localStorage persistence, a responsive sidebar with mobile toggle, and stat cards with dynamic indicators.",
@@ -106,6 +43,7 @@ export const projects = [
   },
   {
     id: 3,
+    slug: "react-job-portal-app",
     title: "React Job Portal App",
     description:
       "A modern job portal application that allows users to search, filter, save, and view job listings. Features dynamic routing, pagination, and persistent saved jobs using Context API and localStorage, providing a real-world job browsing experience.",
@@ -127,6 +65,7 @@ export const projects = [
   },
   {
     id: 4,
+    slug: "react-travel-booking-app",
     title: "React Travel Booking App",
     description:
       "A responsive travel booking interface that allows users to explore destinations, view hotels, and navigate between pages using dynamic routing. Demonstrates reusable components and modern UI design.",
@@ -145,6 +84,7 @@ export const projects = [
   },
   {
     id: 5,
+    slug: "react-notes-app",
     title: "React Notes App",
     description:
       "A notes management application that allows users to create, edit, and delete notes with persistent storage using localStorage. Demonstrates state management and dynamic routing in a clean UI.",
@@ -163,6 +103,7 @@ export const projects = [
   },
   {
     id: 6,
+    slug: "react-movie-search-app",
     title: "React Movie Search App",
     description:
       "A movie search application that fetches real-time movie data from the TMDB API. Demonstrates API integration, asynchronous data fetching, and responsive UI rendering.",
@@ -181,6 +122,7 @@ export const projects = [
   },
   {
     id: 7,
+    slug: "react-weather-app",
     title: "React Weather App",
     description:
       "A weather application that displays real-time weather information using the OpenWeather API. Demonstrates API handling, state management, and responsive design.",
@@ -199,6 +141,7 @@ export const projects = [
   },
   // {
   //   id: 8,
+  //   slug: "react-todo-app",
   //   title: "React Todo App",
   //   description:
   //     "A task management application that allows users to add, complete, and delete tasks. Demonstrates list rendering, controlled inputs, and basic state management.",
@@ -216,6 +159,7 @@ export const projects = [
   // },
   // {
   //   id: 9,
+  //   slug: "react-counter-app",
   //   title: "React Counter App",
   //   description:
   //     "A simple counter application demonstrating React fundamentals such as state management and event handling with increment, decrement, and reset functionality.",

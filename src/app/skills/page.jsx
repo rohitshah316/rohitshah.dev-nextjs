@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { skills } from '../../data/data'
+import { skills } from '../../data/skills'
 
 const Skills = () => {
 
