@@ -1,6 +1,10 @@
 import React, { useContext } from 'react'
 import { skills } from '../../data/skills'
 
+
+export const metadata={
+  title:"Skills & Tech Stack"
+};
 const Skills = () => {
 
 

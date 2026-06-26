@@ -3,6 +3,9 @@ import { IoMdPerson } from "react-icons/io";
 import { FaLightbulb } from "react-icons/fa";
 import { FaYoutube, FaMoon, FaMusic } from "react-icons/fa6";
 import { GiCoffeeBeans, GiCoffeeCup } from "react-icons/gi";
+export const metadata={
+  title:"About Me"
+};
 
 const About = () => {
 

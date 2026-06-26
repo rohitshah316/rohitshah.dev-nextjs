@@ -1,6 +1,10 @@
 import { projects } from '../../data/projects'
 import { FaRegArrowAltCircleRight } from "react-icons/fa";
 
+export const metadata={
+  title:"Projects"
+};
+
 const Projects = () => {
 
    const theme='light'
