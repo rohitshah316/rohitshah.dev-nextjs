@@ -4,17 +4,20 @@ import React, { useRef, useState } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import emailjs from "@emailjs/browser";
+import { useTheme } from "@/context/ThemeContext";
 
 const ContactForm = () => {
+
+
   const [success, setSuccess] = useState(false);
   const form = useRef(null);
 
-  const theme = "light";
+  const {theme}=useTheme();
 
   const placeholderStyle =
     theme === "dark"
       ? "placeholder-gray-400 bg-gray-500"
-      : "placeholder-gray-600 bg-gray-100";
+      : "placeholder-gray-600 bg-gray-50";
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -40,14 +43,14 @@ const ContactForm = () => {
   };
 
   return (
-    <section className="text-black mt-10 mx-auto max-w-4xl pt-12 pb-20 px-6">
+    <section className={`${theme==='dark'?'text-white':'text-black'} mt-10 mx-auto max-w-4xl pt-12 pb-20 px-6`}>
       <h2 className="text-3xl font-bold mb-6">Contact Me</h2>
-      <p className="my-6 text-2xl">Have a project in mind? Let’s talk.</p>
+      <p className="my-6 text-2xl text-gradient">Have a project in mind? Let’s talk.</p>
 
       <form
         ref={form}
         onSubmit={sendEmail}
-        className="bg-blue-100 text-black flex flex-col gap-5 p-10 w-full max-w-xl rounded-2xl ring ring-cyan-600"
+          className={`${theme==='dark'?'bg-gray-800 text-white':'bg-slate-200 text-black'} flex flex-col gap-5 p-10 w-full max-w-xl rounded-2xl ring ring-cyan-600`}
       >
         <input
           name="from_name"
@@ -90,7 +93,7 @@ const ContactForm = () => {
         <span className="font-semibold text-xl text-red-500">
           Or Email Me Directly:
         </span>
-        <a href="mailto:contact.rohitshah.dev@gmail.com" className="underline">
+        <a href="mailto:contact.rohitshah.dev@gmail.com" className="underline text-gradient">
           contact.rohitshah.dev@gmail.com
         </a>
 

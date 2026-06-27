@@ -26,6 +26,7 @@ export const skills = [
       "REST APIs",
       "Netlify",
       "Vite",
+      "Vercel",
     ],
   },
   {

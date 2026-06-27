@@ -10,11 +10,14 @@ import TextType from '../components/common/TextType';
 import TiltedCard from '../components/common/TiltedCard'
 import GithubContributions from "@/components/GithubContributions/GithubContributions";
 
+import {useTheme} from '@/context/ThemeContext'
+
 const Home = () => {
 
+  const {theme}=useTheme();
   return (
-    <section className="">
-      <div className={`flex md:flex-row flex-col justify-around items-center w-full my-15 text-black font-mono`}>
+    <section>
+      <div className={`flex md:flex-row flex-col justify-around items-center w-full my-15 ${theme==='dark'?'text-white':'text-black'} font-mono`}>
         <div className='flex w-[50%] gap-3 items-center justify-center'>
           <div className="text-center">
 
@@ -56,7 +59,7 @@ const Home = () => {
 
 
         <div className='w-[50%] mt-10 flex flex-col items-center'>
-          {/* <img src="/profile/profile.jpeg" alt="" className='rounded-[50%] w-100 h-100 ring-5 ring-red-700 shadow-lg hover:shadow-cyan-800 hover:scale-110'/> */}
+        
 
           <TiltedCard
             imageSrc="/profile/profile.jpeg"
@@ -70,10 +73,11 @@ const Home = () => {
             scaleOnHover={1.2}
             showMobileWarning={false}
             showTooltip
+            
 
           />
 
-          <h2 className='text-gradient font-bold text-4xl py-5'>Rohit Shah</h2>
+          <h2 className='text-gradient font-bold text-3xl md:text-4xl py-5'>Rohit Shah</h2>
         </div>
       </div>
 <div className='md:hidden gap-2 flex flex-col mx-10 -mt-10 mb-10'>
@@ -83,11 +87,11 @@ const Home = () => {
             </div>
 
       <div className="max-w-4xl mx-auto" >
-        <h2 className="text-3xl font-bold mx-5 mb-5">GitHub Contributions</h2>
+        <h2 className={`text-3xl font-bold mx-5 mb-5 ${theme==='dark'?'text-white':'text-black'}`}>GitHub Contributions</h2>
         <GithubContributions />
 
 
-        <Button text={<>Visit Github <FaGithub className="text-2xl ml-2"/></>} className="mx-auto w-[60%] mt-10 bg-blue-700 text-white hover:-translate-y-0.5 hover:bg-blue-800" href='https://www.github.com/rohitshah316' target="_blank"/>
+        <Button text={<>Visit Github <FaGithub className="text-2xl ml-2 "/></>} className="ring-cyan-600 mx-auto w-[60%] mt-10 bg-blue-700 text-white hover:-translate-y-0.5 hover:bg-blue-800" href='https://www.github.com/rohitshah316' target="_blank"/>
       </div>
       {/* Pinned Projects  */}
       <div>

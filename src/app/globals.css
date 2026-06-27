@@ -45,10 +45,11 @@ body{
 }
 
 
-.dark{
+body.dark{
   background-color: #000000;
 }
-.light{
+body.light{
   background-color: aliceblue;
 }
+
 
