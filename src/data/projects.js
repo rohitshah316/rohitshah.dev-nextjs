@@ -2,9 +2,21 @@ export const projects = [
   {
     id: 1,
     slug: "real-time-chat-app",
+    featured: true,
     title: "Real-time Chat App",
+    type: "Personal Project",
+    completedAt: "May 2026",
     description:
       "A modern and responsive Real-time Chat Application built with React and Firebase that allows users to register, login, and chat with others instantly in real time. Features Firebase Authentication, live Firestore messaging, notification sounds, and protected routing.",
+    features: [
+      "User registration and login with Firebase Authentication",
+      "Real-time messaging powered by Firestore",
+      "Notification sounds on new messages",
+      "Protected routing for authenticated users",
+      "Responsive and modern UI design",
+    ],
+    learnings:
+      "Before building this I had to learn Firebase from scratch - authentication, Firestore, and real-time listeners. Integrating everything together and seeing messages appear instantly without a page refresh made me feel like a complete developer for the first time.",
     tech: [
       "React.js",
       "Tailwind CSS",
@@ -15,17 +27,28 @@ export const projects = [
       "Custom Hooks",
       "JavaScript",
     ],
-    thumbnail:
-      "https://raw.githubusercontent.com/rohitshah316/Real-time-Chat-App/main/public/real-time-chat-app.png",
+    thumbnail: "/thumbnails/real-time-chat-app.png",
     github: "https://github.com/rohitshah316/Real-time-Chat-App.git",
     demo: "https://rohitshahrealtimechatapp.netlify.app/",
   },
   {
     id: 2,
     slug: "react-dashboard-app",
+    featured: true,
     title: "React Dashboard App",
+    type: "Personal Project",
+    completedAt: "May 2026",
     description:
       "A modern analytics dashboard with interactive Chart.js visualizations including Line, Bar, and Pie charts. Features dark and light mode with localStorage persistence, a responsive sidebar with mobile toggle, and stat cards with dynamic indicators.",
+    features: [
+      "Interactive Line, Bar, and Pie charts using Chart.js",
+      "Dark and light mode with localStorage persistence",
+      "Responsive sidebar with mobile toggle",
+      "Stat cards with dynamic indicators",
+      "Clean professional analytics UI",
+    ],
+    learnings:
+      "This was challenging - I had to learn Chart.js from scratch and understand how to integrate it with React. I can now build dashboards with ease but would still refer to the documentation for more advanced chart configurations.",
     tech: [
       "React.js",
       "Tailwind CSS",
@@ -36,17 +59,60 @@ export const projects = [
       "JavaScript",
       "Responsive Design",
     ],
-    thumbnail:
-      "https://raw.githubusercontent.com/rohitshah316/React-Dashboard-App/main/public/react-dashboard-app.png",
+    thumbnail: "/thumbnails/react-dashboard-app.png",
     github: "https://github.com/rohitshah316/React-Dashboard-App.git",
     demo: "https://rohitshahreactdashboardapp.netlify.app/",
   },
   {
     id: 3,
+    slug: "react-portfolio-v1",
+    featured: false,
+    title: "React Portfolio v1",
+    type: "Personal Project",
+    completedAt: "March 2026",
+    description:
+      "My first personal portfolio built with React.js - the foundation that later evolved into the current Next.js version. Showcases my projects, skills, and experience with a clean and responsive design.",
+    features: [
+      "Custom useTitle hook for dynamic page titles",
+      "Dark and light theme with ThemeContext",
+      "EmailJS integration for contact form",
+      "Fully responsive for mobile and desktop",
+      "Deployed on Netlify with custom domain",
+    ],
+    learnings:
+      "This was the most fun and personally satisfying project to build. I built it in roughly 3 days and it taught me how to use hooks like useTitle, ThemeContext, EmailJS, and react-icons in a real production context. I also polished mobile responsiveness more on this than any other project since it was my own portfolio. It later became the base for my Next.js portfolio refactor.",
+    tech: [
+      "React.js",
+      "Tailwind CSS",
+      "React Router",
+      "Context API",
+      "EmailJS",
+      "React Icons",
+      "JavaScript",
+      "Responsive Design",
+    ],
+    thumbnail: "/thumbnails/react-portfolio-v1.png",
+    github: "https://github.com/rohitshah316/rohitshah.dev.git",
+    demo: "https://rohitshahdev.netlify.app/",
+  },
+  {
+    id: 4,
     slug: "react-job-portal-app",
+    featured: true,
     title: "React Job Portal App",
+    type: "Personal Project",
+    completedAt: "March 2026",
     description:
       "A modern job portal application that allows users to search, filter, save, and view job listings. Features dynamic routing, pagination, and persistent saved jobs using Context API and localStorage, providing a real-world job browsing experience.",
+    features: [
+      "Functional search bar and filter options for job listings",
+      "Save jobs and view them on a dedicated Saved Jobs page",
+      "Pagination for browsing large job lists",
+      "Persistent saved jobs using Context API and localStorage",
+      "Fake jobs data simulating a real-world API",
+    ],
+    learnings:
+      "This project taught me how to build a fully functional search and filter system from scratch. I also learned how to create a global saved jobs context so that saved state persists across different pages like the listing page and the saved jobs page.",
     tech: [
       "React",
       "Tailwind CSS",
@@ -58,17 +124,28 @@ export const projects = [
       "Pagination",
       "Responsive Design",
     ],
-    thumbnail:
-      "https://raw.githubusercontent.com/rohitshah316/React-Job-Portal-App/main/public/react-job-portal-app.png",
+    thumbnail: "/thumbnails/react-job-portal-app.png",
     github: "https://github.com/rohitshah316/React-Job-Portal-App.git",
     demo: "https://rohitshahreactjobportalapp.netlify.app/",
   },
   {
-    id: 4,
+    id: 5,
     slug: "react-travel-booking-app",
+    featured: false,
     title: "React Travel Booking App",
+    type: "Practice Project",
+    completedAt: "March 2026",
     description:
       "A responsive travel booking interface that allows users to explore destinations, view hotels, and navigate between pages using dynamic routing. Demonstrates reusable components and modern UI design.",
+    features: [
+      "Dynamic routing for destination detail pages",
+      "Detailed pages for Kathmandu and Pokhara with hotels and places to visit",
+      "Search box supporting Kathmandu and Pokhara destinations",
+      "Responsive and clean travel UI",
+      "Reusable component architecture",
+    ],
+    learnings:
+      "This project was focused on learning dynamic page routing in React. I added extra detail to two destinations - Pokhara and Kathmandu - with hotels, rooms, and places to visit. The search only works for these two destinations, keeping the scope realistic for a practice project.",
     tech: [
       "React",
       "Tailwind CSS",
@@ -77,17 +154,28 @@ export const projects = [
       "Component-Based Architecture",
       "Responsive Design",
     ],
-    thumbnail:
-      "https://raw.githubusercontent.com/rohitshah316/React-Travel-Booking-App/main/public/react-travel-booking-app.png",
+    thumbnail: "/thumbnails/react-travel-booking-app.png",
     github: "https://github.com/rohitshah316/React-Travel-Booking-App.git",
     demo: "https://rohitshahreacttravelbookingapp.netlify.app/",
   },
   {
-    id: 5,
+    id: 6,
     slug: "react-notes-app",
+    featured: false,
     title: "React Notes App",
+    type: "Practice Project",
+    completedAt: "March 2026",
     description:
       "A notes management application that allows users to create, edit, and delete notes with persistent storage using localStorage. Demonstrates state management and dynamic routing in a clean UI.",
+    features: [
+      "Create notes with a title and content section",
+      "Auto-saves as Untitled if user leaves without filling details",
+      "Delete notes that reflect across all pages instantly",
+      "Persistent storage with localStorage",
+      "Clean mobile-style notes UI with dynamic routing",
+    ],
+    learnings:
+      "I started thinking it would be a simple todo app but it clicked that it should feel like the notes app on a phone. The biggest challenge was managing context so that deleting a note reflected correctly whether you were on the list page or inside an open note. This project is where I truly learned how to create and use React Context.",
     tech: [
       "React",
       "Tailwind CSS",
@@ -96,17 +184,28 @@ export const projects = [
       "Context API",
       "Responsive Design",
     ],
-    thumbnail:
-      "https://raw.githubusercontent.com/rohitshah316/React-Notes-App/refs/heads/main/public/react-notes-app.png",
+    thumbnail: "/thumbnails/react-notes-app.png",
     github: "https://github.com/rohitshah316/React-Notes-App.git",
     demo: "https://rohitshahreactnotesapp.netlify.app/",
   },
   {
-    id: 6,
+    id: 7,
     slug: "react-movie-search-app",
+    featured: false,
     title: "React Movie Search App",
+    type: "Practice Project",
+    completedAt: "March 2026",
     description:
       "A movie search application that fetches real-time movie data from the TMDB API. Demonstrates API integration, asynchronous data fetching, and responsive UI rendering.",
+    features: [
+      "Search movies in real time using the TMDB API",
+      "Displays movie posters, titles, and ratings",
+      "Asynchronous data fetching with loading states",
+      "Responsive grid layout for movie results",
+      "Clean and minimal UI",
+    ],
+    learnings:
+      "API fetching was genuinely difficult at first. I ran into multiple problems and had to use every resource available - ChatGPT, Claude, YouTube, Google, and even my own 30-React-practice-projects repo. Eventually solving it on my own and getting the data to render correctly was a big confidence boost.",
     tech: [
       "React",
       "Tailwind CSS",
@@ -115,17 +214,28 @@ export const projects = [
       "JavaScript",
       "API Integration",
     ],
-    thumbnail:
-      "https://raw.githubusercontent.com/rohitshah316/React-Movie-Search-App/refs/heads/main/public/movie-search-app-ss.png",
+    thumbnail: "/thumbnails/react-movie-search-app.png",
     github: "https://github.com/rohitshah316/React-Movie-Search-App.git",
     demo: "https://rohitshahreactmoviesearchapp.netlify.app/",
   },
   {
-    id: 7,
+    id: 8,
     slug: "react-weather-app",
+    featured: false,
     title: "React Weather App",
+    type: "Practice Project",
+    completedAt: "March 2026",
     description:
       "A weather application that displays real-time weather information using the OpenWeather API. Demonstrates API handling, state management, and responsive design.",
+    features: [
+      "Search any city and get real-time weather data",
+      "Displays temperature, humidity, and weather condition",
+      "Clean and minimal weather UI",
+      "Responsive design for all screen sizes",
+      "Error handling for invalid city names",
+    ],
+    learnings:
+      "This was the smallest and easiest project in the series. No major issues - it was a clean, straightforward build that helped solidify my understanding of API calls and state management in React.",
     tech: [
       "React",
       "Tailwind CSS",
@@ -134,13 +244,13 @@ export const projects = [
       "JavaScript",
       "Responsive Design",
     ],
-    thumbnail:
-      "https://raw.githubusercontent.com/rohitshah316/React-Weather-App/refs/heads/main/public/react-weather-app.png",
+    thumbnail: "/thumbnails/react-weather-app.png",
     github: "https://github.com/rohitshah316/React-Weather-App.git",
     demo: "https://rohitshahreactweather.netlify.app/",
   },
+  
   // {
-  //   id: 8,
+  //   id: 9,
   //   slug: "react-todo-app",
   //   title: "React Todo App",
   //   description:
@@ -152,13 +262,12 @@ export const projects = [
   //     "State Management",
   //     "Responsive Design",
   //   ],
-  //   thumbnail:
-  //     "https://raw.githubusercontent.com/rohitshah316/React-Todo-App/main/todo-app.png",
+  //   thumbnail: "/thumbnails/react-todo-app.png",
   //   github: "https://github.com/rohitshah316/React-Todo-App.git",
   //   demo: "https://rohitshahtodoapp.netlify.app/",
   // },
   // {
-  //   id: 9,
+  //   id: 10,
   //   slug: "react-counter-app",
   //   title: "React Counter App",
   //   description:
@@ -170,8 +279,7 @@ export const projects = [
   //     "State Management",
   //     "Event Handling",
   //   ],
-  //   thumbnail:
-  //     "https://raw.githubusercontent.com/rohitshah316/React-Counter-App/main/counter%20app.png",
+  //   thumbnail: "/thumbnails/react-counter-app.png",
   //   github: "https://github.com/rohitshah316/React-Counter-App.git",
   //   demo: "https://rohitshahcounterapp.netlify.app/",
   // },
