@@ -6,9 +6,12 @@ import { IoIosMoon } from "react-icons/io";
 import Link from 'next/link';
 import { useTheme } from '@/context/ThemeContext';
 import { BsFillSunFill } from 'react-icons/bs';
+import { usePathname } from 'next/navigation';
+
 const Navbar = () => {
 
   const {toggleTheme,theme}=useTheme();
+  const pathname=usePathname();
   return (
 
 
@@ -20,15 +23,15 @@ const Navbar = () => {
         {/* desktop menu */}
         <div className='flex gap-3 item-center'>
         <ul className='md:flex gap-2 hidden font-semibold '>
-            <li><Link className='hover:text-blue-400' href='/'>Home</Link></li>
-            <li><Link className='hover:text-blue-400' href='/about'>About</Link></li>
-                <li><Link className='hover:text-blue-400' href='/skills'>Skills</Link></li>
-            <li><Link className='hover:text-blue-400' href='/projects'>Projects</Link></li>
-            <li><Link className='hover:text-blue-400' href='/contact'>Contact</Link></li>
+            <li><Link className={`${pathname==='/'?'text-gradient':''} hover:text-blue-400`} href='/'>Home</Link></li>
+            <li><Link className={`${pathname==='/about'?'text-gradient':''} hover:text-blue-400`} href='/about'>About</Link></li>
+                <li><Link className={`${pathname==='/skills'?'text-gradient':''} hover:text-blue-400`} href='/skills'>Skills</Link></li>
+            <li><Link className={`${pathname==='/projects'?'text-gradient':''} hover:text-blue-400`} href='/projects'>Projects</Link></li>
+            <li><Link className={`${pathname==='/contact'?'text-gradient':''} hover:text-blue-400`} href='/contact'>Contact</Link></li>
         
              
         </ul>
-<button onClick={toggleTheme} className='text-2xl rounded-4xl bg-slate-600  p-1'> {theme==='dark'?<BsFillSunFill className='text-amber-400 font-bold'/>:<IoIosMoon className='text-white'/>}</button>
+<button onClick={toggleTheme} className='text-2xl rounded-4xl bg-slate-600 cursor-pointer hover:scale-105 p-1'> {theme==='dark'?<BsFillSunFill className='text-amber-400 font-bold'/>:<IoIosMoon className='text-white'/>}</button>
         </div>
 
        

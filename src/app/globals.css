@@ -20,15 +20,17 @@ body{
 
 
 
+
 /*navlink active*/
-.bottom-navbar li:has(a.active){
+
+.bottom-navbar li.active{
   background: linear-gradient(to right, #2563eb, #72c4e1);
   border-radius: 50%;
-  width: 45px;
-  height: 45px;
+  padding: 6px;
   display: flex;
   justify-content: center;
   align-items: center;
+  
  
   
   
