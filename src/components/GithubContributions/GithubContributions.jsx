@@ -25,7 +25,7 @@ const GithubContributions = () => {
 
 <div className='flex flex-col sm:flex-row flex-wrap max-w-4xl gap-2'>
             <img
-  src="https://github-readme-stats.vercel.app/api?username=rohitshah316&show_icons=true"
+  src="https://github-readme-stats-zeta-mocha-91.vercel.app/api?username=rohitshah316"
   alt="GitHub Stats"
   width={350}
  
