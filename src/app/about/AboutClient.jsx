@@ -144,7 +144,7 @@ const About = () => {
       <div className={`${theme==='dark'?'bg-gray-800':'bg-slate-100'} px-10 py-6 rounded-2xl transform hover:-translate-y-2 ring ring-cyan-600 `}>
   
   <p className="text-lg leading-relaxed  md:flex items-center gap-2 mb-4">
-    <GiCoffeeCup className={`${theme==='dark'?'text-red-600':'text-red-950'}`} /> Fan of both Tea and Coffee. But <span className="font-semibold text-gradient">Tea over Coffee, always.</span> 
+    <GiCoffeeCup className={`${theme==='dark'?'text-red-600':'text-red-950'}`} /> Fan of both Tea and Coffee. But,<span className="font-semibold text-gradient">Tea over Coffee, always.</span> 
   </p>
   <hr className="border-gray-700 mb-4" />
   <p className="text-lg leading-relaxed md:flex items-center gap-2 mb-4">
