@@ -99,7 +99,7 @@ const Home = () => {
             <div className={`max-w-4xl mx-auto mt-10 ${theme==='dark'?'text-white':'text-black'}`}>
                       <h2 className={`text-3xl font-bold mx-5 mb-5 `}>Featured Projects</h2>
                        <div className='grid grid-cols-1 md:grid-cols-2  gap-6'>
-                    {projects.map(project=>(
+                    {projects.filter((project)=>project.featured).map(project=>(
                         <div key={project.id}
                         className={`${theme==='dark'?'bg-gray-800':'bg-blue-100'} p-6 rounded-2xl ring ring-cyan-600 flex flex-col gap-2 transform hover:-translate-y-2`}
                         >

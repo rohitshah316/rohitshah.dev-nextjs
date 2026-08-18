@@ -1,6 +1,49 @@
 export const projects = [
   {
     id: 1,
+    slug: "next-js-expense-tracker",
+    featured: true,
+    title: "Next.js Expense Tracker",
+    type: "Personal Project",
+    completedAt: "August 2026",
+    description:
+      "A full-featured personal expense tracking application built with Next.js. The project demonstrates client-side state management, data persistence, and interactive data visualization using the App Router, Context API, and Recharts, resulting in a fast, backend-free expense management experience.",
+    features: [
+      "Built with Next.js App Router",
+      "Add, edit, delete, search, and filter expenses",
+      "Filter expenses by category and custom date range",
+      "Dashboard overview with summary cards and quick stats",
+      "Analytics page with category breakdown and monthly spending trends",
+      "Monthly and per-category budget tracking with progress indicators",
+      "Over-budget warnings with visual feedback",
+      "Export expense data to JSON",
+      "Full data reset with confirmation modal",
+      "Persistent data storage using localStorage with no backend required",
+      "Reusable UI component library",
+      "Responsive mobile-first layout",
+    ],
+    learnings:
+      "This project gave me practical experience with the Next.js App Router and building a complete application around Context API and localStorage. I learned how to create a custom persistence hook, manage global state without prop drilling, handle dynamic routing, build reusable UI components, and visualize derived expense data with Recharts. It also helped me understand how to structure a larger Next.js application while keeping the code modular and maintainable.",
+    tech: [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "Recharts",
+      "Context API",
+      "localStorage",
+      "Lucide React",
+      "clsx",
+      "Vercel",
+      "JavaScript",
+      "App Router",
+      "Responsive Design",
+    ],
+    thumbnail: "/thumbnails/next-js-expense-tracker.png",
+    github: "https://github.com/rohitshah316/next-js-expense-tracker",
+    demo: "https://next-js-expense-tracker-alpha.vercel.app/dashboard",
+  },
+  {
+    id: 2,
     slug: "real-time-chat-app",
     featured: true,
     title: "Real-time Chat App",
@@ -32,7 +75,7 @@ export const projects = [
     demo: "https://rohitshahrealtimechatapp.netlify.app/",
   },
   {
-    id: 2,
+    id: 3,
     slug: "react-dashboard-app",
     featured: true,
     title: "React Dashboard App",
@@ -64,7 +107,7 @@ export const projects = [
     demo: "https://rohitshahreactdashboardapp.netlify.app/",
   },
   {
-    id: 3,
+    id: 4,
     slug: "react-portfolio-v1",
     featured: false,
     title: "React Portfolio v1",
@@ -96,7 +139,7 @@ export const projects = [
     demo: "https://rohitshahdev.netlify.app/",
   },
   {
-    id: 4,
+    id: 5,
     slug: "react-job-portal-app",
     featured: true,
     title: "React Job Portal App",
@@ -129,7 +172,7 @@ export const projects = [
     demo: "https://rohitshahreactjobportalapp.netlify.app/",
   },
   {
-    id: 5,
+    id: 6,
     slug: "react-travel-booking-app",
     featured: false,
     title: "React Travel Booking App",
@@ -159,7 +202,7 @@ export const projects = [
     demo: "https://rohitshahreacttravelbookingapp.netlify.app/",
   },
   {
-    id: 6,
+    id: 7,
     slug: "react-notes-app",
     featured: false,
     title: "React Notes App",
@@ -189,7 +232,7 @@ export const projects = [
     demo: "https://rohitshahreactnotesapp.netlify.app/",
   },
   {
-    id: 7,
+    id: 8,
     slug: "react-movie-search-app",
     featured: false,
     title: "React Movie Search App",
@@ -219,7 +262,7 @@ export const projects = [
     demo: "https://rohitshahreactmoviesearchapp.netlify.app/",
   },
   {
-    id: 8,
+    id: 9,
     slug: "react-weather-app",
     featured: false,
     title: "React Weather App",
@@ -248,9 +291,9 @@ export const projects = [
     github: "https://github.com/rohitshah316/React-Weather-App.git",
     demo: "https://rohitshahreactweather.netlify.app/",
   },
-  
+
   // {
-  //   id: 9,
+  //   id: 10,
   //   slug: "react-todo-app",
   //   title: "React Todo App",
   //   description:
@@ -267,7 +310,7 @@ export const projects = [
   //   demo: "https://rohitshahtodoapp.netlify.app/",
   // },
   // {
-  //   id: 10,
+  //   id: 11,
   //   slug: "react-counter-app",
   //   title: "React Counter App",
   //   description:
