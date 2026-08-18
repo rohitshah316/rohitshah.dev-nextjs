@@ -1,5 +1,5 @@
 "use client"
-import { FaReact } from "react-icons/fa";
+import { FaReact, FaRegArrowAltCircleRight } from "react-icons/fa";
 import { TbFileCv } from "react-icons/tb";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
@@ -11,6 +11,7 @@ import TiltedCard from '../components/common/TiltedCard'
 import GithubContributions from "@/components/GithubContributions/GithubContributions";
 
 import {useTheme} from '@/context/ThemeContext'
+import { projects } from "@/data/projects";
 
 const Home = () => {
 
@@ -94,9 +95,35 @@ const Home = () => {
         <Button text={<>Visit Github <FaGithub className="text-2xl ml-2 "/></>} className="ring-cyan-600 mx-auto w-[60%] mt-10 bg-blue-700 text-white hover:-translate-y-0.5 hover:bg-blue-800" href='https://www.github.com/rohitshah316' target="_blank"/>
       </div>
       {/* Pinned Projects  */}
-      <div>
+   
+            <div className={`max-w-4xl mx-auto mt-10 ${theme==='dark'?'text-white':'text-black'}`}>
+                      <h2 className={`text-3xl font-bold mx-5 mb-5 `}>Featured Projects</h2>
+                       <div className='grid grid-cols-1 md:grid-cols-2  gap-6'>
+                    {projects.map(project=>(
+                        <div key={project.id}
+                        className={`${theme==='dark'?'bg-gray-800':'bg-blue-100'} p-6 rounded-2xl ring ring-cyan-600 flex flex-col gap-2 transform hover:-translate-y-2`}
+                        >
+                        <img src={project.thumbnail} alt={project.title} className='rounded-xl transform hover:scale-150 ring ring-cyan-300'/>
+                        <h3 className='font-bold'>{project.title}</h3>
+                        <p className='text-sm'>{project.description}</p>
+                        <ul className='space-y-2'>
+                            {project.tech.map((stack,i)=>(
+                                <li key={i} className='text-white bg-gray-500 inline-block p-1 m-1 rounded text-sm cursor-pointer hover:bg-gray-600'>{stack}</li>
+                            ))}
+                        </ul>
 
-      </div>
+                        <div className='flex justify-between'>
+                            <a href={project.github} target='_blank' className='text-red-500 font-semibold transform hover:translate-x-2'>Source Code</a>
+                            <a href={project.demo} target='_blank' className='text-green-400 transform hover:translate-x-2 font-semibold flex justify-center '>
+                                <span>Live Demo</span>
+                                <FaRegArrowAltCircleRight className='relative top-1.5 right-0 transform hover:translate-x-2'/>
+                                </a>
+                        </div>
+                        </div>
+                    ))}
+            </div>
+            </div>
+     
     </section>
   )
 }

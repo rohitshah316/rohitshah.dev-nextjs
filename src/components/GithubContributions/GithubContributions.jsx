@@ -10,11 +10,11 @@ const GithubContributions = () => {
 
   const {theme}=useTheme();
   return (
-    <div className={`m-5 md:m-2 flex flex-col justify-center items-center gap-8 px-4  ${theme==='dark'?'bg-slate-600':'bg-slate-200'} p-10 rounded-2xl ring ring-cyan-400 hover:-translate-y-2`}>
+    <div className={`m-2 flex flex-col justify-center items-center gap-8 px-3  ${theme==='dark'?'bg-slate-600':'bg-slate-200'} p-10 rounded-2xl ring ring-cyan-400 hover:-translate-y-2`}>
         
        <div className="w-full overflow-x-auto flex-justify-center">
         <div className="min-w-[320px] sm:min-w-150">
-             <div className={` ${theme==='dark'?'bg-slate-400':'bg-slate-300'} p-2 rounded`}>
+             <div className={` ${theme==='dark'?'bg-slate-400':'bg-slate-300'} p-1 rounded`}>
               <GitHubCalendar 
         username="rohitshah316"
         colorScheme={theme}
