@@ -5,6 +5,7 @@ export const skills = [
     skills: [
       "React.js",
       "Next.js",
+      "TypeScript",
       "JavaScript (ES6+)",
       "HTML5",
       "CSS3",
@@ -33,6 +34,7 @@ export const skills = [
     id: 3,
     title: "Core Concepts",
     skills: [
+      "Type-Safe Component Architecture",
       "Responsive Design",
       "API Integration",
       "State Management",
@@ -47,7 +49,6 @@ export const skills = [
     id: 4,
     title: "Currently Exploring",
     skills: [
-      "TypeScript",
       "Node.js",
       "Express.js",
       "MongoDB",
