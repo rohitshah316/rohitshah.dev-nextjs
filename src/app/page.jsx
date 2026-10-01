@@ -30,7 +30,7 @@ const Home = () => {
               text={[
                 "Frontend Engineer",
                 "React & Next.js",
-                "Web App Builder"
+                "With TypeScript"
               ]}
               typingSpeed={45}
               deletingSpeed={45}

@@ -1,5 +1,36 @@
 export const projects = [
   {
+    id: 12,
+    slug: "nextjs-typescript-dashboard",
+    featured: true,
+    title: "Next.js TypeScript Dashboard",
+    type: "Personal Project",
+    completedAt: "September 2026",
+    description:
+      "A type-safe analytics dashboard built with Next.js and TypeScript as the capstone of my 30-project TypeScript roadmap. Static typing is applied across components, props, and API data models to eliminate a class of runtime errors common in plain JavaScript apps.",
+    features: [
+      "Type-safe analytics dashboard built with Next.js and TypeScript",
+      "Static typing across components, props, and API data models",
+      "Strict typing conventions using interfaces, union types, and generics",
+      "Self-documenting codebase that is safer to refactor",
+      "Capstone project of a 30-project TypeScript roadmap",
+    ],
+    learnings:
+      "This was the capstone of my 30-project TypeScript roadmap, so the goal was to apply everything in one real application. I used strict typing conventions - interfaces, union types, and generics - across components, props, and API data models, which caught a whole class of runtime errors before they ever reached the browser. It also made the codebase self-documenting and much safer to refactor.",
+    tech: [
+      "Next.js",
+      "TypeScript",
+      "React",
+      "Interfaces",
+      "Union Types",
+      "Generics",
+      "Vercel",
+    ],
+    thumbnail: "/thumbnails/nextjs-typescript-dashboard.png",
+    github: "https://github.com/rohitshah316/nextjs-typescript-dashboard",
+    demo: "https://nextjs-typescript-dashboard-alpha.vercel.app/",
+  },
+  {
     id: 1,
     slug: "next-js-expense-tracker",
     featured: true,

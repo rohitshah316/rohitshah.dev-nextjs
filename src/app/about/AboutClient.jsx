@@ -22,7 +22,7 @@ const About = () => {
       </p>
 
       <p className="mb-4 text-lg leading-relaxed">
-        I focus on <span className="font-semibold text-gradient">React, Next.js, and modern JavaScript</span> to develop
+        I focus on <span className="font-semibold text-gradient">React, Next.js, TypeScript, and modern JavaScript</span> to develop
         scalable, maintainable applications with clean architecture and strong
         user experience. I've built multiple real-world projects that involve
         dynamic data handling, API integration, and responsive UI design, all
@@ -32,7 +32,9 @@ const About = () => {
       <p className="mb-4 text-lg leading-relaxed">
         I'm comfortable working with component-based architecture, managing
         state efficiently, and writing clean, readable code that can scale in
-        real-world environments. Beyond just development, I pay close attention
+        real-world environments. I use <span className="font-semibold text-gradient">TypeScript</span> to
+        build type-safe applications, with strict typing across components, props, and API data, so
+        code stays safer to refactor. Beyond just development, I pay close attention
         to <span className="font-semibold text-gradient">UI/UX, performance, and overall product quality</span>.
       </p>
 
@@ -42,6 +44,7 @@ const About = () => {
         <h3 className="text-xl font-semibold my-2">What I Can Do:</h3>
         <ul className="list-disc list-inside space-y-1">
           <li>Build modern web applications using React and Next.js</li>
+          <li>Build type-safe applications and dashboards with TypeScript</li>
           <li>Create responsive and user-friendly UI with clean design</li>
           <li>Integrate APIs and handle real-time data</li>
           <li>Write maintainable, scalable, and performance-focused code</li>
@@ -107,7 +110,7 @@ const About = () => {
        <hr className='border-gray-700'/>
         <div className='flex justify-between my-2 md:flex-row flex-col'>
           <span>Primary Stack</span>
-          <h3 className='italic'>React, Next.js, JS, Tailwind CSS</h3>
+          <h3 className='italic'>React, Next.js, TypeScript, JS, Tailwind CSS</h3>
         </div>
        <hr className='border-gray-700'/>
 
