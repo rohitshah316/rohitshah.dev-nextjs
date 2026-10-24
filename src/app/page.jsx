@@ -27,11 +27,13 @@ const Home = () => {
 
 
             <TextType
-              text={[
-                "Frontend Engineer",
-                "React & Next.js",
-                "With TypeScript"
-              ]}
+            text={[
+  "Full Stack Developer",
+  "React & Next.js",
+  "Node.js & Express",
+  "TypeScript & Prisma",
+  "PostgreSQL & REST APIs"
+]}
               typingSpeed={45}
               deletingSpeed={45}
               pauseDuration={1000}
