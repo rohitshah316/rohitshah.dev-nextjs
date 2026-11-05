@@ -46,7 +46,7 @@ const Home = () => {
 
             <div className='md:flex gap-2 hidden ml-8'>
 
-              <Button text={<>Resume <TbFileCv className='text-2xl' /></>} href='/resume/rohit-shah-resume.pdf' className='-ml-1 mt-2 bg-blue-500 hover:bg-blue-600 text-white hover:-translate-y-0.5 active:translate-y-0 w-35 ring-cyan-300 font-sans' target="_blank" />
+              <Button text={<>Resume <TbFileCv className='text-2xl' /></>} href='/resume/rohit-shah-resume-fullstack.pdf' className='-ml-1 mt-2 bg-blue-500 hover:bg-blue-600 text-white hover:-translate-y-0.5 active:translate-y-0 w-35 ring-cyan-300 font-sans' target="_blank" />
               <Button text='Contact Me' className='hover:-translate-y-0.5 active:translate-y-0 mt-2 w-35 ring-red-400 font-sans bg-red-500 hover:bg-red-600 text-white' target="_blank" href="mailto:contact.rohitshah.dev@gmail.com?subject=Opportunity&body=Hi Rohit," />
             </div>
             {/* <div className='text-4xl flex gap-2 mt-3 ml-10'>
