@@ -1,11 +1,36 @@
 "use client"
 import { FaGoogleScholar } from "react-icons/fa6";
 import { IoMdPerson } from "react-icons/io";
-import { FaLightbulb } from "react-icons/fa";
+import { FaLightbulb, FaBriefcase } from "react-icons/fa";
 import { FaYoutube, FaMoon, FaMusic } from "react-icons/fa6";
 import { GiCoffeeBeans, GiCoffeeCup } from "react-icons/gi";
 import { useTheme } from "@/context/ThemeContext";
 
+const experiences = [
+  {
+    role: "Frontend Developer (Self-Employed / Project-Based)",
+    org: "Independent",
+    period: "2024 - Present",
+    points: [
+      "Designed, built, and deployed 12+ projects with React, Next.js, and Tailwind CSS.",
+      "Integrated third-party APIs and handled dynamic and real-time data in responsive interfaces.",
+      "Adopted TypeScript with strict typing across components, props, and API data.",
+      "Structured projects as separate, modular codebases that are easy to maintain and extend.",
+    ],
+    tech: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
+  },
+  {
+    role: "Frontend Developer, Group Project",
+    org: "EduAdapt - BCA, Tribhuvan University",
+    period: "BCA 4th Semester",
+    points: [
+      "Worked in a team on an adaptive academic planning and analytics platform.",
+      "Built user-facing interfaces and collaborated with teammates under academic supervision.",
+      "Practiced real team workflows: shared requirements, task splitting, and code integration.",
+    ],
+    tech: ["React", "Next.js", "Team Collaboration"],
+  },
+];
 
 const About = () => {
 
@@ -17,7 +42,7 @@ const About = () => {
       <h2 className="text-3xl font-bold mb-6">About Me</h2>
 
       <p className="mb-4 text-lg leading-relaxed">
-        Hi, I'm Rohit Shah, a <span className='text-gradient font-semibold'>Frontend Engineer</span> specializing in building fast,
+        Hi, I'm Rohit Shah, a self-taught <span className='text-gradient font-semibold'>Frontend Developer</span> from Nepal who builds fast,
         responsive, and production-ready web applications.
       </p>
 
@@ -36,6 +61,11 @@ const About = () => {
         build type-safe applications, with strict typing across components, props, and API data, so
         code stays safer to refactor. Beyond just development, I pay close attention
         to <span className="font-semibold text-gradient">UI/UX, performance, and overall product quality</span>.
+      </p>
+
+      <p className="mb-4 text-lg leading-relaxed">
+        I'm also expanding into the backend with <span className="font-semibold text-gradient">Node.js, Express, and PostgreSQL</span>,
+        so I can build and ship full-stack features end to end.
       </p>
 
 
@@ -69,6 +99,41 @@ const About = () => {
 
 
 
+      {/* Experience Section */}
+      <h2 className="text-3xl font-bold mb-6 mt-10 flex gap-2 items-center">Experience <FaBriefcase className='text-gray-400' /></h2>
+      <div className="flex flex-col gap-6">
+        {experiences.map((exp) => (
+          <div
+            key={`${exp.role}-${exp.org}`}
+            className={`${theme === 'dark' ? 'bg-gray-800' : 'bg-slate-200 text-black'} rounded-2xl p-10 transform hover:-translate-y-2 ring ring-cyan-600`}
+          >
+            <div className='flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6'>
+              <div>
+                <h3 className='text-xl font-semibold'>{exp.role}</h3>
+                <p className='text-gradient font-semibold'>{exp.org}</p>
+              </div>
+              <span className='bg-cyan-700 font-bold px-3 py-2 rounded-xl text-white whitespace-nowrap'>{exp.period}</span>
+            </div>
+            <ul className="list-disc list-inside space-y-1 mb-6">
+              {exp.points.map((point) => (
+                <li key={point}>{point}</li>
+              ))}
+            </ul>
+            <div className='flex flex-wrap gap-2'>
+              {exp.tech.map((t) => (
+                <span
+                  key={t}
+                  className={`${theme === 'dark' ? 'bg-gray-900 text-white' : 'bg-white text-black'} text-sm font-semibold px-3 py-1 rounded-full ring-1 ring-cyan-600`}
+                >
+                  {t}
+                </span>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+
+
 
       <h2 className="text-3xl font-bold mb-6 mt-10 flex gap-2 items-center">Education <FaGoogleScholar className='text-gray-400' /></h2>
       <div className={`${theme === 'dark' ? 'bg-gray-800' : 'bg-slate-200 text-black'} rounded-2xl p-10 transform hover:-translate-y-2 ring ring-cyan-600`}>
@@ -76,6 +141,7 @@ const About = () => {
           <div>
             <h3 className='text-xl font-semibold'>Tribhuvan University</h3>
             <p>Bachelor in Computer Application &#40;BCA&#41;</p>
+            <p className='text-sm opacity-80'>Kathmandu Model College</p>
           </div>
           <span className='bg-cyan-700 font-bold px-3 py-2 rounded-xl text-white'>2024-Current</span>
         </div>
