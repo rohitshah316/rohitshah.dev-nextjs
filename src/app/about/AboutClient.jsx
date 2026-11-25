@@ -8,27 +8,19 @@ import { useTheme } from "@/context/ThemeContext";
 
 const experiences = [
   {
-    role: "Frontend Developer (Self-Employed / Project-Based)",
-    org: "Independent",
-    period: "2024 - Present",
+    role: "Full-Stack Developer Intern",
+    org: "Crispr Coders",
+    period: "Oct 2026 - Present",
+    type: "Remote · 3-month internship",
     points: [
-      "Designed, built, and deployed 12+ projects with React, Next.js, and Tailwind CSS.",
-      "Integrated third-party APIs and handled dynamic and real-time data in responsive interfaces.",
-      "Adopted TypeScript with strict typing across components, props, and API data.",
-      "Structured projects as separate, modular codebases that are easy to maintain and extend.",
+      "Building features across the frontend and backend of a production codebase.",
+      "Integrating React and TypeScript interfaces with Node.js and Express APIs.",
+      "Working with Prisma and PostgreSQL for data modeling and queries.",
+      "Using TanStack for data fetching and state management on the client.",
+      "Working inside a Turborepo setup with a shared SDK package.",
+      "Taking part in code reviews and team tasks.",
     ],
-    tech: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
-  },
-  {
-    role: "Frontend Developer, Group Project",
-    org: "EduAdapt - BCA, Tribhuvan University",
-    period: "BCA 4th Semester",
-    points: [
-      "Worked in a team on an adaptive academic planning and analytics platform.",
-      "Built user-facing interfaces and collaborated with teammates under academic supervision.",
-      "Practiced real team workflows: shared requirements, task splitting, and code integration.",
-    ],
-    tech: ["React", "Next.js", "Team Collaboration"],
+    tech: ["React", "TypeScript", "Node.js", "Express", "TanStack", "Prisma", "PostgreSQL", "Turborepo"],
   },
 ];
 
@@ -42,12 +34,12 @@ const About = () => {
       <h2 className="text-3xl font-bold mb-6">About Me</h2>
 
       <p className="mb-4 text-lg leading-relaxed">
-        Hi, I'm Rohit Shah, a self-taught <span className='text-gradient font-semibold'>Frontend Developer</span> from Nepal who builds fast,
-        responsive, and production-ready web applications.
+        Hi, I'm Rohit Shah, a <span className='text-gradient font-semibold'>Full-Stack Developer</span> from Nepal who builds fast,
+        responsive, and production-ready web applications, from the UI to the API and database behind it.
       </p>
 
       <p className="mb-4 text-lg leading-relaxed">
-        I focus on <span className="font-semibold text-gradient">React, Next.js, TypeScript, and modern JavaScript</span> to develop
+        I work with <span className="font-semibold text-gradient">React, Next.js, TypeScript, Node.js, Express, and PostgreSQL</span> to develop
         scalable, maintainable applications with clean architecture and strong
         user experience. I've built multiple real-world projects that involve
         dynamic data handling, API integration, and responsive UI design, all
@@ -64,8 +56,9 @@ const About = () => {
       </p>
 
       <p className="mb-4 text-lg leading-relaxed">
-        I'm also expanding into the backend with <span className="font-semibold text-gradient">Node.js, Express, and PostgreSQL</span>,
-        so I can build and ship full-stack features end to end.
+        I'm currently working as a <span className="font-semibold text-gradient">Full-Stack Developer Intern at Crispr Coders</span>,
+        where I build features across the frontend and backend, and I'm building full-stack projects of my own with
+        Next.js, Prisma, and PostgreSQL.
       </p>
 
 
@@ -74,6 +67,7 @@ const About = () => {
         <h3 className="text-xl font-semibold my-2">What I Can Do:</h3>
         <ul className="list-disc list-inside space-y-1">
           <li>Build modern web applications using React and Next.js</li>
+          <li>Build REST APIs with Node.js and Express, backed by PostgreSQL and Prisma</li>
           <li>Build type-safe applications and dashboards with TypeScript</li>
           <li>Create responsive and user-friendly UI with clean design</li>
           <li>Integrate APIs and handle real-time data</li>
@@ -93,7 +87,7 @@ const About = () => {
       </div>
 
       <p className="text-lg leading-relaxed">
-        I'm currently open to <span className="font-semibold text-gradient">remote opportunities and freelance projects</span>,
+        I'm currently open to <span className="font-semibold text-gradient">remote full-stack opportunities and freelance projects</span>,
         and I'm ready to contribute to real-world products from day one.
       </p>
 
@@ -111,6 +105,7 @@ const About = () => {
               <div>
                 <h3 className='text-xl font-semibold'>{exp.role}</h3>
                 <p className='text-gradient font-semibold'>{exp.org}</p>
+                <p className='text-sm opacity-80'>{exp.type}</p>
               </div>
               <span className='bg-cyan-700 font-bold px-3 py-2 rounded-xl text-white whitespace-nowrap'>{exp.period}</span>
             </div>
@@ -166,7 +161,7 @@ const About = () => {
        <hr className='border-gray-700'/>
         <div className='flex justify-between my-2 md:flex-row flex-col'>
           <span>Role</span>
-          <h3 className='italic'>Frontend Developer (React & Next.js)</h3>
+          <h3 className='italic'>Full-Stack Developer (React, Next.js & Node.js)</h3>
         </div>
         <hr className='border-gray-700'/>
         <div className='flex justify-between my-2 md:flex-row flex-col'>
@@ -176,13 +171,13 @@ const About = () => {
        <hr className='border-gray-700'/>
         <div className='flex justify-between my-2 md:flex-row flex-col'>
           <span>Primary Stack</span>
-          <h3 className='italic'>React, Next.js, TypeScript, JS, Tailwind CSS</h3>
+          <h3 className='italic'>React, Next.js, TypeScript, Node.js, Express, PostgreSQL, Prisma, Tailwind CSS</h3>
         </div>
        <hr className='border-gray-700'/>
 
         <div className='flex justify-between my-2 md:flex-row flex-col'>
           <span>Experience Level</span>
-          <h3 className='italic'>Project-Based Experience</h3>
+          <h3 className='italic'>Full-Stack Intern + Project-Based Experience</h3>
         </div>
        <hr className='border-gray-700'/>
 
@@ -194,7 +189,7 @@ const About = () => {
 
         <div className='flex justify-between my-2 md:flex-row flex-col'>
           <span className='text-green-500'>Availability</span>
-          <h3 className='italic text-green-400 font-semibold'>Open to Remote & Freelance Opportunities</h3>
+          <h3 className='italic text-green-400 font-semibold'>Open to Remote Full-Stack & Freelance Opportunities</h3>
         </div>
         <hr className='border-gray-700'/>
 
